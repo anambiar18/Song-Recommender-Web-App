@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import TextBox from './TextBox';
+import ArtistBox from './ArtistBox';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          How are you doing today? Let us know and we will recommend some songs
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TextBox />
+        <p>
+          Indicate an artist of your choice to help us narrow our results
+        </p>
+        <ArtistBox />
       </header>
     </div>
   );
+
 }
 
 export default App;
